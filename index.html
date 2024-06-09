@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header p-3 mb-3 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <div class="d-flex align-items-center mb-2 mb-lg-0">
+                    <img src="./images/logo.png" alt="Logo" width="125" height="74" class="me-2"> <!-- Adjusted logo size -->
+                </div>
+                <ul class="nav col-12 col-lg-auto mb-2 justify-content-center mb-md-0 ms-auto">
+                    <li><a href="index.html" class="nav-link px-2 link-dark">Home</a></li>
+                    <li><a href="services.html" class="nav-link px-2 link-dark">Services</a></li>
+                    <li><a href="experts.html" class="nav-link px-2 link-dark">Tutors</a></li>
+                    <li><a href="reviews.html" class="nav-link px-2 link-dark">Reviews</a></li>
+                    <li><a href="book.html" class="nav-link px-2 link-dark">Book Session</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <div class="background-image"></div>
+        <div class="text-content">
+            <h1>One-On-One Tutoring For Everyone</h1>
+            <p class="lead">An in-person or online learning experience for everyone</p>
+            <button type="button" class="btn btn-secondary btn-custom">Book Session</button>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h5>Our Location</h5>
+                    <p>
+                        838 Sommerset Street<br>
+                        Ottawa, ON<br>
+                        K1R 6R7
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>
+                        613-410-0930<br>
+                        tutortech@uottawa.ca
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Hours of Operation</h5>
+                    <p>
+                        Weekends: 9:00 AM-7:00 PM<br>
+                        Weekends/Holidays: 10:00 AM-5:00 PM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('.btn-custom').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'book.html';
+        });
+    </script>
+</body>
+</html>
